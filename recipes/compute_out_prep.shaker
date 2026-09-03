@@ -1,6 +1,36 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "id"
+      },
+      {
+        "d": true,
+        "name": "id-1000"
+      },
+      {
+        "d": true,
+        "name": "name"
+      },
+      {
+        "d": true,
+        "name": "age"
+      },
+      {
+        "d": true,
+        "name": "branch2"
+      },
+      {
+        "d": true,
+        "name": "branch1"
+      },
+      {
+        "d": true,
+        "name": "branch3"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +60,61 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "id+1000\t",
+        "column": "id-1000",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "name"
+        ],
+        "values": [
+          "Alice",
+          "Eva"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "name"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "Bob"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +142,15 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "branch3": 100,
+    "branch2": 100,
+    "id-1000": 100,
+    "name": 100,
+    "branch1": 100,
+    "id": 100,
+    "age": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
