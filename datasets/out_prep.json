@@ -90,7 +90,8 @@
       {"name":"id","type":"bigint"},
       {"name":"id-1000","type":"bigint"},
       {"name":"name","type":"string"},
-      {"name":"age","type":"bigint"}
+      {"name":"age","type":"bigint"},
+      {"name":"mod","type":"string"}
     ],
     "userModified": true
   },
