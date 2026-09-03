@@ -17,18 +17,6 @@
       {
         "d": true,
         "name": "age"
-      },
-      {
-        "d": true,
-        "name": "branch2"
-      },
-      {
-        "d": true,
-        "name": "branch1"
-      },
-      {
-        "d": true,
-        "name": "branch3"
       }
     ]
   },
