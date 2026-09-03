@@ -90,10 +90,7 @@
       {"name":"id","type":"bigint"},
       {"name":"id-1000","type":"bigint"},
       {"name":"name","type":"string"},
-      {"name":"age","type":"bigint"},
-      {"name":"branch2","type":"string"},
-      {"name":"branch1","type":"string"},
-      {"name":"branch3","type":"string"}
+      {"name":"age","type":"bigint"}
     ],
     "userModified": true
   },
