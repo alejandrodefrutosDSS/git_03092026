@@ -88,6 +88,7 @@
   "schema": {
     "columns": [
       {"name":"id","type":"bigint"},
+      {"name":"id-1000","type":"bigint"},
       {"name":"name","type":"string"},
       {"name":"age","type":"bigint"},
       {"name":"branch2","type":"string"},
