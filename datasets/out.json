@@ -86,8 +86,15 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"id","type":"bigint"},
+      {"name":"name","type":"string"},
+      {"name":"age","type":"bigint"},
+      {"name":"branch2","type":"string"},
+      {"name":"branch1","type":"string"},
+      {"name":"branch3","type":"string"}
+    ],
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
